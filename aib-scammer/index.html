@@ -21,6 +21,8 @@
 
   <p>The fake login form asked for two things: an AIB registration number (an eight-digit account identifier) and a PAC code (a five-digit personal access code). Anyone who entered their real credentials handed them straight to the scammers.</p>
 
+  <img class="chart" src="scam-flow.png" alt="Flow diagram showing the scam on the left (victim clicks SMS link, site checks User-Agent, desktop gets 404, mobile gets fake login, credentials stolen) and the counter-attack on the right (spoofed mobile User-Agents, fake Irish IPs, random credentials, 4,000 POST requests that poison the stolen database).">
+
   <h3>Understanding the Target</h3>
 
   <p>To build a convincing counter-attack, I first needed to understand exactly what the scam site was checking. I scraped lists of real mobile User-Agent strings from whatismybrowser.com, a public database of browser signatures. This gave me hundreds of real Android and iOS identifiers to work with.</p>
@@ -40,6 +42,8 @@
   <p>With everything in place, I sent 4,000 POST requests to the scammer's login endpoint. Each request carried a unique combination of randomised fake credentials, a spoofed Irish IP address, and a real mobile User-Agent string. I added one more detail: a 24% chance that each submission would be resent immediately. The scam site responded to every login attempt with a message saying the credentials were incorrect, clearly designed to make confused victims re-enter their details. Mimicking that re-entry pattern made the fake submissions harder to distinguish from real ones.</p>
 
   <p>The result: for every genuine victim who fell for the phishing site, the scammers' database now contained roughly 200 fake entries. Finding a real registration number and PAC code in that noise would take longer than the data was worth. The stolen credentials were effectively poisoned.</p>
+
+  <img class="chart" src="signal-noise.png" alt="Horizontal bar chart showing 20 estimated real credential entries versus 4,000 fake entries from the counter-attack. The ratio is approximately 1 real credential per 200 fakes.">
 
   <p>Sometimes the most useful thing you can do with a technical skill is notice something that feels wrong and act on it.</p>
 
