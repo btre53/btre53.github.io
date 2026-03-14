@@ -13,7 +13,7 @@ Four phases get a recruiter-ready portfolio live as fast as possible. Phase 1 de
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Landing page + shared CSS deployed to GitHub Pages (completed 2026-03-14)
-- [x] **Phase 2: AIB Scammer Article** - Notebook converted to standalone web article (completed 2026-03-14)
+- [x] **Phase 2: AIB Scammer Article** - Notebook converted to standalone web article (completed 2026-03-14)
 - [ ] **Phase 3: Gambling Industry Articles** - Three articles covering pricing, triage, and optimisation
 - [ ] **Phase 4: Polish & Links** - Live project cards, cross-linking, final responsive pass
 
@@ -56,7 +56,13 @@ Plans:
   2. Article 2 (Automated Triage) explains the compress-rank-summarize pipeline and positions the LLM as a constrained junior analyst directing human attention to highest-impact areas
   3. Article 3 (Optimisation & Classification) explains knapsack-style selection and threshold classification with a clear "when simplicity beats complexity" conclusion
   4. All three articles link back to the landing page and to each other as a series
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Write gambling-pricing/index.html (Pricing & Calibration article)
+- [ ] 03-02-PLAN.md — Write gambling-triage/index.html (Automated Triage article)
+- [ ] 03-03-PLAN.md — Write gambling-optimisation/index.html (Optimisation & Classification article)
+- [ ] 03-04-PLAN.md — Update landing page card hrefs and tags
 
 ### Phase 4: Polish & Links
 **Goal**: Every live project is linked, cross-links are complete, and the site is fully navigable
@@ -78,5 +84,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 |-------|----------------|--------|-----------|
 | 1. Foundation | 1/1 | Complete    | 2026-03-14 |
 | 2. AIB Scammer Article | 1/1 | Complete    | 2026-03-14 |
-| 3. Gambling Industry Articles | 0/TBD | Not started | - |
+| 3. Gambling Industry Articles | 0/4 | Not started | - |
 | 4. Polish & Links | 0/TBD | Not started | - |
