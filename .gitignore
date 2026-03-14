@@ -1,0 +1,21 @@
+# Ignore everything by default
+*
+
+# Allow portfolio files
+!.gitignore
+!index.html
+!style.css
+!Robert_Treacy_CV.docx
+
+# Allow article directories
+!aib-scammer/
+!aib-scammer/**
+!gambling-pricing/
+!gambling-pricing/**
+!gambling-triage/
+!gambling-triage/**
+!gambling-optimisation/
+!gambling-optimisation/**
+
+# Allow planning docs (optional, can remove if you want clean public repo)
+# .planning/
