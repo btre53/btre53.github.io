@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Landing page + shared CSS deployed to GitHub Pages (completed 2026-03-14)
 - [x] **Phase 2: AIB Scammer Article** - Notebook converted to standalone web article (completed 2026-03-14)
-- [ ] **Phase 3: Gambling Industry Articles** - Three articles covering pricing, triage, and optimisation
+- [x] **Phase 3: Gambling Industry Articles** - Three articles covering pricing, triage, and optimisation (completed 2026-03-14)
 - [ ] **Phase 4: Polish & Links** - Live project cards, cross-linking, final responsive pass
 
 ## Phase Details
@@ -84,5 +84,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 |-------|----------------|--------|-----------|
 | 1. Foundation | 1/1 | Complete    | 2026-03-14 |
 | 2. AIB Scammer Article | 1/1 | Complete    | 2026-03-14 |
-| 3. Gambling Industry Articles | 0/4 | Not started | - |
+| 3. Gambling Industry Articles | 0/4 | Complete    | 2026-03-14 |
 | 4. Polish & Links | 0/TBD | Not started | - |
