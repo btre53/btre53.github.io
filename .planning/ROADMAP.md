@@ -12,7 +12,7 @@ Four phases get a recruiter-ready portfolio live as fast as possible. Phase 1 de
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [x] **Phase 1: Foundation** - Landing page + shared CSS deployed to GitHub Pages (completed 2026-03-14)
+- [x] **Phase 1: Foundation** - Landing page + shared CSS deployed to GitHub Pages (completed 2026-03-14)
 - [ ] **Phase 2: AIB Scammer Article** - Notebook converted to standalone web article
 - [ ] **Phase 3: Gambling Industry Articles** - Three articles covering pricing, triage, and optimisation
 - [ ] **Phase 4: Polish & Links** - Live project cards, cross-linking, final responsive pass
@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 1 plan
 
 Plans:
-- [ ] 01-01-PLAN.md — Shared stylesheet (style.css) and landing page (index.html)
+- [x] 01-01-PLAN.md — Shared stylesheet (style.css) and landing page (index.html)
 
 ### Phase 2: AIB Scammer Article
 **Goal**: A recruiter can read the full AIB Scammer story as a web article
@@ -42,7 +42,10 @@ Plans:
   1. Article explains how the phishing site worked (mobile-only serving, user agent detection, credential harvesting) in plain language a non-technical reader follows
   2. Article explains the counter-attack (spoofed user agents, fake Irish IPs, 4,000 fake credentials) and why poisoning the dataset was the goal
   3. Landing page link to the article resolves and renders with consistent site styling
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [ ] 02-01-PLAN.md — Write aib-scammer/index.html narrative article and update landing page card
 
 ### Phase 3: Gambling Industry Articles
 **Goal**: All three gambling industry articles are live and readable
@@ -74,6 +77,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 1/1 | Complete    | 2026-03-14 |
-| 2. AIB Scammer Article | 0/TBD | Not started | - |
+| 2. AIB Scammer Article | 0/1 | Not started | - |
 | 3. Gambling Industry Articles | 0/TBD | Not started | - |
 | 4. Polish & Links | 0/TBD | Not started | - |
