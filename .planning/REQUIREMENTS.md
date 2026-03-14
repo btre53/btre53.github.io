@@ -62,26 +62,26 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| LAND-01 | TBD | Pending |
-| LAND-02 | TBD | Pending |
-| LAND-03 | TBD | Pending |
-| GAMB-01 | TBD | Pending |
-| GAMB-02 | TBD | Pending |
-| GAMB-03 | TBD | Pending |
-| SCAM-01 | TBD | Pending |
-| SCAM-02 | TBD | Pending |
-| LIVE-01 | TBD | Pending |
-| LIVE-02 | TBD | Pending |
-| LIVE-03 | TBD | Pending |
-| STYLE-01 | TBD | Pending |
-| STYLE-02 | TBD | Pending |
-| STYLE-03 | TBD | Pending |
+| LAND-01 | Phase 1 | Pending |
+| LAND-02 | Phase 1 | Pending |
+| LAND-03 | Phase 1 | Pending |
+| STYLE-01 | Phase 1 | Pending |
+| STYLE-02 | Phase 1 | Pending |
+| STYLE-03 | Phase 1 | Pending |
+| SCAM-01 | Phase 2 | Pending |
+| SCAM-02 | Phase 2 | Pending |
+| GAMB-01 | Phase 3 | Pending |
+| GAMB-02 | Phase 3 | Pending |
+| GAMB-03 | Phase 3 | Pending |
+| LIVE-01 | Phase 4 | Pending |
+| LIVE-02 | Phase 4 | Pending |
+| LIVE-03 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 14 total
-- Mapped to phases: 0
-- Unmapped: 14
+- Mapped to phases: 14
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-14*
-*Last updated: 2026-03-14 after initial definition*
+*Last updated: 2026-03-14 after roadmap creation*
