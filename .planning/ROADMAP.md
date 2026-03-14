@@ -29,7 +29,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Page renders correctly on a 375px mobile viewport with no horizontal scroll and tap targets at least 44px
   4. All articles use Georgia serif, cream (#fafaf8) background, dark green (#1b3a2d) headers, max-width 720px — matching the Irish elections piece
   5. Charts (when added) render as static PNGs with 1px border and 4px border-radius
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [ ] 01-01-PLAN.md — Shared stylesheet (style.css) and landing page (index.html)
 
 ### Phase 2: AIB Scammer Article
 **Goal**: A recruiter can read the full AIB Scammer story as a web article
@@ -66,11 +69,11 @@ Decimal phases appear between their surrounding integers in numeric order.
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/TBD | Not started | - |
+| 1. Foundation | 0/1 | Not started | - |
 | 2. AIB Scammer Article | 0/TBD | Not started | - |
 | 3. Gambling Industry Articles | 0/TBD | Not started | - |
 | 4. Polish & Links | 0/TBD | Not started | - |
