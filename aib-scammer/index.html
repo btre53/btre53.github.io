@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fighting a Phishing Site — Robert Treacy</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="back-link" href="../">Back to portfolio</a>
+
+  <h1>Fighting a Phishing Site</h1>
+
+  <p>In early 2022, a phishing site appeared targeting customers of AIB, one of Ireland's largest banks. The fake site was well-built and surprisingly clever about who it showed itself to. Rather than just reporting it, I decided to fight back.</p>
+
+  <h3>The Scam</h3>
+
+  <p>The site sat at aib.ie1.online, a domain close enough to the real thing to fool someone clicking a link in a hurry. If you visited from a desktop browser, it returned a blank 404 error. Nothing to see. But if you visited from a mobile phone, it displayed a convincing replica of the AIB login page.</p>
+
+  <p>The trick was the User-Agent header, a label that every browser automatically sends to identify itself. Desktop browsers send one kind of label; mobile browsers send another. The scammers were filtering on this to avoid detection. Desktop visitors, who might include security researchers or bank employees checking reports, saw nothing. Mobile visitors, who were more likely to be real customers tapping a link from a text message, saw the trap.</p>
+
+  <p>The fake login form asked for two things: an AIB registration number (an eight-digit account identifier) and a PAC code (a five-digit personal access code). Anyone who entered their real credentials handed them straight to the scammers.</p>
+
+  <h3>Understanding the Target</h3>
+
+  <p>To build a convincing counter-attack, I first needed to understand exactly what the scam site was checking. I scraped lists of real mobile User-Agent strings from whatismybrowser.com, a public database of browser signatures. This gave me hundreds of real Android and iOS identifiers to work with.</p>
+
+  <p>Inspecting the login form revealed the endpoint: a file at /files/action.php?type=login that accepted four fields. Along with the registration number and PAC code, the site was logging the visitor's IP address and User-Agent string. The IP logging was probably defensive. If a security organisation or law enforcement agency started probing the site, the scammers could block those addresses. Any effective counter-attack would need to come from IP addresses that looked like ordinary Irish internet connections.</p>
+
+  <h3>Building the Ammunition</h3>
+
+  <p>The counter-attack needed three ingredients. First, fake but plausible AIB credentials. Registration numbers are eight digits, so I generated random numbers between 10,000,000 and 99,999,999. PAC codes are five digits, randomly drawn between 10,000 and 99,999. None of these corresponded to real accounts, but they looked exactly like the genuine article.</p>
+
+  <p>Second, Irish IP addresses. I scraped a table of real Irish IP ranges from nirsoft.net, a publicly available network reference. Then I shifted each segment of the address by a small random amount to generate plausible-looking addresses that would still trace back to Ireland. The scammers would see traffic that appeared to come from ordinary Irish broadband connections.</p>
+
+  <p>Third, a realistic mix of mobile browsers. In Europe, roughly 72% of mobile traffic comes from Android devices and 28% from iPhones. I matched that ratio when selecting User-Agent strings, so the submissions looked like a normal cross-section of Irish mobile users.</p>
+
+  <h3>The Counter-Attack</h3>
+
+  <p>With everything in place, I sent 4,000 POST requests to the scammer's login endpoint. Each request carried a unique combination of randomised fake credentials, a spoofed Irish IP address, and a real mobile User-Agent string. I added one more detail: a 24% chance that each submission would be resent immediately. The scam site responded to every login attempt with a message saying the credentials were incorrect, clearly designed to make confused victims re-enter their details. Mimicking that re-entry pattern made the fake submissions harder to distinguish from real ones.</p>
+
+  <p>The result: for every genuine victim who fell for the phishing site, the scammers' database now contained roughly 200 fake entries. Finding a real registration number and PAC code in that noise would take longer than the data was worth. The stolen credentials were effectively poisoned.</p>
+
+  <p>Sometimes the most useful thing you can do with a technical skill is notice something that feels wrong and act on it.</p>
+
+</body>
+</html>
