@@ -3,10 +3,12 @@
 
 # Allow portfolio files
 !.gitignore
+!.nojekyll
 !index.html
 !style.css
 !Robert_Treacy_CV.docx
 !Robert_Treacy_CV.odt
+!Robert_Treacy_CV.pdf
 
 # Allow article directories
 !aib-scammer/
