@@ -21,6 +21,8 @@
 !gambling-optimisation/**
 !rainwater-power/
 !rainwater-power/**
+!efficient-food/
+!efficient-food/**
 
 # Allow planning docs (optional, can remove if you want clean public repo)
 # .planning/
